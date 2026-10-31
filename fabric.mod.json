@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "dynamicisland",
+  "version": "${version}",
+  "name": "Dynamic Island",
+  "description": "Dynamic Island в стиле iPhone: ник, HP, чат и Jade-инфо. Только клиент, без сети.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.dynamicisland.DynamicIslandClient"],
+    "modmenu": ["dev.dynamicisland.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
